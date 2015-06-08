@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+  <head><link rel="stylesheet" type="text/css" media="all" href="css/style.css" />
+  <head><link rel="stylesheet" type="text/css" media="all" href="css/screen.css" />
+  <title>CMS</title>
+  <style>
+  #cntct
+  {
+		position:absolute;
+		top:250px;
+		left:20px;
+		border:;
+		border-width:1px;
+		border-color:solid green;
+		background-color:;
+		width:500px;
+		height:400px;
+  }
+  </style>
+
+    <style>
+      #googleMap {
+		position:relative;
+		top:100px;
+		left:500px;
+        width: 500px;
+        height: 400px;
+		}
+    </style>
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script
+src="http://maps.googleapis.com/maps/api/js">
+</script>
+
+<script>
+var myCenter=new google.maps.LatLng(11.323056, 75.935948);
+
+function initialize()
+{
+var mapProp = {
+  center:myCenter,
+  zoom:5,
+  mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+
+var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+var marker=new google.maps.Marker({
+  position:myCenter,
+  icon:'images/pin.png'
+  });
+
+marker.setMap(map);
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+  </head>
+  <body>
+    <div id="header">
+        <div class="header_content">
+      
+        <div class="logo"><a href=""><font face="Stencil Std" color ="black">CMS</font></a> <span>NIT calicut</span></div>
+        
+        <div class="menu">
+            <ul>
+                <li class="selected"><a href="index.php">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+               
+            </ul>
+         </div>
+         
+        </div> 
+  </div><!-- End of Header-->
+  <div id="cntct"> 
+  <p align="center">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <font color="grey" size="5"><i/>Contact us</font></p>
+  <form id="form5" action="/" method="post">	
+		
+			<fieldset>
+				<p class="first">					
+					<label for="name">Name</label>				
+					<input type="text" value="Purnendu Roy" id="name" size="30" disabled="disabled" />					
+				</p>
+				<p>					
+					<label for="email">Email</label>				
+			<input type="text" value="shanoo.roy@gmail.com"  id="email" size="30" disabled="disabled" />				
+				</p>
+				<p>
+					<label for="web">Website</label>				
+		<input type="text" value="andromeda.nitc.ac.in/~purnendu"  id="web" size="30"  disabled="disabled"/>										
+				</p>			
+				<p>
+					<label for="phone">Phone</label>				
+			<input type="text" value="+91 8891556192"  id="phone" size="30" disabled="disabled" />										
+				</p>	
+  </div>
+  <div id="googleMap"></div>
+  </body>
+</html>
