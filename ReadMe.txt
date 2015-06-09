@@ -2,6 +2,8 @@
     *Component Management System*
 ------------------------------------
 
+Website Link -> http://192.168.41.100/~purnendu/cms/
+
 Requirements
 --------------
 Note that the "CMS" will requires the wampserver.
@@ -35,3 +37,5 @@ Steps to Run the Web Application "CMS"
 6. Then select CMS project, which resides in the www folder
 7. For Database need to select phpMyAdmin.
 8. Bydefault the Admin Password is 123.
+
+NOTE:  These are the steps for Localhost.
