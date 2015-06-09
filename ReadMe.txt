@@ -37,6 +37,6 @@ Steps to Run the Web Application "CMS"
 6. Then select CMS project, which resides in the www folder
 7. For Database need to select phpMyAdmin.
 8. Import the database file(file named 'test123') via phpMyAdmin from the db folder which i've included here in cms.
-8. Bydefault the Admin Password is 123.
+9. Bydefault the Admin Password is 123.
 
 NOTE:  These are the steps for Localhost.
