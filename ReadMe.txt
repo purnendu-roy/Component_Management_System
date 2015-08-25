@@ -4,13 +4,14 @@
 
 Website Link -> http://192.168.41.100/~purnendu/cms/
 
+
 Requirements
---------------
+-------------
 Note that the "CMS" will requires the wampserver.
 
 
-Installation
---------------
+Installation 
+-------------
 	windows
 	---------
 	1. Download the latest version from http://www.wampserver.com/en/
@@ -37,6 +38,5 @@ Steps to Run the Web Application "CMS"
 6. Then select CMS project, which resides in the www folder
 7. For Database need to select phpMyAdmin.
 8. Import the database file(file named 'test123') via phpMyAdmin from the db folder which i've included here in cms folder.
-9. Bydefault the Admin Password is 123.
 
 NOTE:  These are the steps for Localhost.
